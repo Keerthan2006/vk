@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+    .text-dark-white {
+        color: #f2f2f2; /* Example dark white color */
+}
+    .text-dark-black{
+        color: black;
+}
+</style>
+
+    <meta charset="utf-8">
+    <title>Anime World</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="https://wallpapers.com/images/featured-full/all-anime-2e92kjl5ii5i7rwz.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top navbar-custom">
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <a href="anime.html" class="navbar-brand">
+                <h1 class="text-white">Anime<span class="text-white">.</span>World</h1>
+            </a>
+            <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="https://www.imdb.com/list/ls033398199/" class="nav-item nav-link">Top-Rated</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Where to Watch</a>
+                        <div class="dropdown-menu bg-light mt-2">
+                            <a href="https://www.crunchyroll.com/" class="dropdown-item">Crunchyroll</a>
+                            <a href="https://www.hulu.com/" class="dropdown-item">Hulu</a>
+                            <a href="https://www.netflix.com/in/browse/genre/7424" class="dropdown-item">Netflix</a>
+                            <a href="https://www.anime-planet.com/" class="dropdown-item">Anime-Planet</a>
+                            <a href="https://beebom.com/best-anime-streaming-apps-websites/" class="dropdown-item">Others</a>
+                        </div>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/Manga" class="nav-item nav-link">Source</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+      
+
+
+<!-- Hero Start -->
+<div class="container-fluid pt-5 bg-blackish-red hero-header mb-5">
+    <div class="container pt-5">
+        <div class="row g-5 pt-5">
+            <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                <div class="btn btn-sm border rounded-pill text-light px-3 mb-3 animated slideInRight">Anime</div>
+                <h1 class="display-4 text-white mb-4 animated slideInRight">Watch Anime And Enter Into A New World</h1>
+                <p class="text-white mb-4 animated slideInRight">Watching Anime Makes You Feel A Lot Of Joy And Excitement. You Will Be In A New World</p>
+                <a href="https://en.wikipedia.org/wiki/Anime" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <img class="img-fluid" src="https://wallpapers.com/images/featured-full/gojo-satoru-8sz62hlsg1epni6l.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(26, 1, 11, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5" style="background-image: url('https://wallpapers.com/images/featured-full/black-and-purple-background-ncacwppi5dvfsax4.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid rounded" style="width: 100%; display: block;" src="https://wallpapers.com/images/high/anime-all-characters-hd-1920-x-1080-8jfpz0d4spwi9zwa.webp">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn text-white" data-wow-delay="0.5s">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Anime</div>
+                <h1 class="mb-4"></h1>
+                <p class="mb-4">Pre Covid Animes aren't famous in our country but interestingly post covid many people are very eager to watch new and exciting Animes</p>
+                <p class="mb-4">From <span style="color: #e6e6e6;">Dragon Ball</span> to <span style="color: #e6e6e6;">Demon Slayer</span> We have different genres like</p>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span style="color: #e6e6e6;">Action Adventure</span></h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span style="color: #e6e6e6;">Psychological Thrillers</span></h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span style="color: #e6e6e6;">Fantasy</span></h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span style="color: #e6e6e6;">Comedy</span></h6>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                    <a class="btn btn-primary rounded-pill px-4 me-3" href="https://beebom.com/anime-types-genres-explained/">Others</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Service Start -->
+<div class="container-fluid bg-light mt-5 py-5" style="background-image: url('https://img.freepik.com/free-vector/abstract-technology-particle-background_23-2148314004.jpg'); background-size: cover; background-position: center;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Anime</div>
+                <h1 class="mb-4 text-dark-white">The Big 4 Of Anime</h1>
+                <p class="mb-4 text-dark-white">Dragon Ball , Naruto , One Piece , Bleach Are Known As Big 4 based on their popularity, no of mangas sold and tremendous fan following etc..</p>
+            </div>
+            <div class="col-lg-7">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="row g-4">
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="background-image: url('https://wallpapers.com/images/featured-full/dragon-ball-super-31k7m53hb2l6rbge.jpg'); background-size: cover; background-position: center;">
+                                    <h5 class="mb-3 text-dark-white">Dragon Ball Z</h5>
+                                    <p class="text-dark-white">Adventure Fantasy Martial arts, Son Goku Plays As Leading Character, Watch in Crunchyroll</p>
+                                    <a class="btn btn-light btn-sm rounded-pill" href="https://www.imdb.com/title/tt0214341/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="background-image: url('https://wallpapers.com/images/featured-full/one-piece-c0pujiakubq5rwas.jpg'); background-size: cover; background-position: center;">
+                                    <h5 class="mb-3 text-dark-white">One Piece</h5>
+                                    <p class="text-dark-white" text-align="bottom">Action Comedy Fantasy, Monkey D. Luffy Plays as Leading Character, Watch in Netflix</p>
+                                    <a class="btn btn-light btn-sm rounded-pill" href="https://www.imdb.com/title/tt0388629/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pt-md-4">
+                        <div class="row g-4">
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="background-image: url('https://wallpapers.com/images/featured-full/naruto-r5aa4v805ovp5cv4.jpg'); background-size: cover; background-position: center;">
+                                    <h5 class="mb-3 text-dark-white">Naruto</h5>
+                                    <p class="text-dark-white">Action Fantasy, Naruto Plays as Leading Character, Watch In Netflix</p>
+                                    <a class="btn btn-light btn-sm rounded-pill" href="https://www.imdb.com/title/tt0409591/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="background-image: url('https://wallpapers.com/images/featured-full/bleach-7bysnovx3hhb2g0x.jpg'); background-size: cover; background-position: center;">
+                                    <h5 class="mb-3 text-dark-white">Bleach</h5>
+                                    <p class="text-dark-white">Adventure Martial arts Supernatural, Ichigo Kurosaki Plays as Leading Character, Watch In Crunchyroll</p>
+                                    <a class="btn btn-light btn-sm rounded-pill" href="https://www.imdb.com/title/tt0434665/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5" style="background-image: url('https://t4.ftcdn.net/jpg/03/12/39/23/240_F_312392310_T6Qe2xapA2UdeCSCq39rJcoSdgX1AaoU.jpg'); background-size: cover; background-position: center">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">NewBies</div>
+                <h1 class="mb-4">Animes For Beginners</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="https://wallpapers.com/images/featured-full/death-note-phone-vnp0whbmxr0koupq.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="https://www.imdb.com/title/tt0877057/">
+                            <small>Death Note</small>
+                            <h5 class="lh-base text-white mb-3">Psychological Thriller,Light vs L
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="https://wallpapers.com/images/featured-full/demon-slayer-6rwgwm36vv3z9lqh.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="https://www.imdb.com/title/tt9335498/">
+                            <small>Demon Slayer</small>
+                            <h5 class="lh-base text-white mb-3">· Adventure-Dark fantasy-Martial arts,Hashiras vs Muzan Kibutsuji
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="https://wallpapers.com/images/featured-full/jujutsu-kaisen-nw5nqs7f94mh9adr.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="https://www.imdb.com/title/tt12343534/">
+                            <small>Jujutsu Kaisen</small>
+                            <h5 class="lh-base text-white mb-3">Adventure-Dark fantasy-Supernatural,Yuji vs Sukuna
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case End -->
+<!-- Team Start -->
+<div class="container-fluid bg-light py-5" style="background-image: url('https://www.color-meanings.com/wp-content/uploads/Blue-and_purple_galaxy-1024x640.jpeg'); background-size: cover; background-position: center;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Characters</div>
+                <h1 class="mb-4 text-dark-white">Iconic Characters</h1>
+                <p class="mb-4 text-dark-white">There are some characters in Anime which may not be main leads but stolen hearts of anime fans and became memorable and iconic characters for Anime lovers
+                   </p>
+                <a class="btn btn-primary rounded-pill px-4" href="https://www.cbr.com/anime-supporting-characters-more-famous-than-main-one/">Read More</a>
+            </div>
+            <div class="col-lg-7">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="row g-4">
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                    <img src="https://images-cdn.ubuy.co.in/634f80658eab8c03e05d4923-beilian-anime-gojo-satoru-jujutsu-kaisen.jpg" alt="" width=250 length=200>
+                                    <a h5 class="mb-0 text-dark-black" href="https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo">Gojo Satoru</h5></a></br>
+                                    <small class="text-dark-black">Immeasurable Cursed Energy</small>
+                                
+                                </div>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                    <img src="https://wallpapers.com/images/featured-full/kakashi-hatake-pictures-meka9numthx0pe6z.jpg" alt="" width=250 length=200>
+                                    <a h5 class="mb-0 text-dark-black" href="https://naruto.fandom.com/wiki/Kakashi_Hatake">Kakashi Hatake</h5></a></br>
+                                    <small class="text-dark-black">Hero of the Sharingan</small>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pt-md-4">
+                        <div class="row g-4">
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                    <img src="https://images.bigbadtoystore.com/images/p/full/2022/06/7de035b8-45a7-4a3c-88ee-98b6ec8487fe.jpg" alt="" width=250 length=200>
+                                    <a h5 class="mb-0 text-dark-black" href="https://naruto.fandom.com/wiki/Itachi_Uchiha">Itachi Uchiha</h5></a></br>
+                                    <small class="text-dark-black">The Solo King</small>
+                                 
+                                </div>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                    <img  src="https://static.wikia.nocookie.net/kimetsu-no-yaiba-fanon/images/e/ef/Zenitsu_II.jpg" alt="" width="100%" length=200>
+                                    <a h5 class="mb-0 text-dark-black" href="https://kimetsu-no-yaiba.fandom.com/wiki/Zenitsu_Agatsuma">Zenitsu Agatsuma</h5></a></br>
+                                    <small class="text-dark-black">Thunder Breathing</small>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
